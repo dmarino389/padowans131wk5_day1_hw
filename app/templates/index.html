@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Favorite Artists List</h1>
+
+  <p>{{message}}</p>
+
+  {% if blue == True %}
+  <p style="color: blue;"></p>
+  {% else %}
+  <p>{{message}}</p>
+  {% endif %}
+
+
+  <ul>
+    {% for person in people %}
+    <li>{{person}}</li>
+    {%endfor%}
+  </ul>
+
+  {% endblock %}
+  
